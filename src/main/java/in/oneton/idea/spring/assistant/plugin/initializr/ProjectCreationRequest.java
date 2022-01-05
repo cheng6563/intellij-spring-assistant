@@ -153,7 +153,7 @@ public class ProjectCreationRequest {
 
   public String buildDownloadUrl() {
     //@formatter:off
-    return serverUrl + "/" + type.getAction() + "?"
+    return serverUrl + type.getAction() + "?"
         + nameAndValueAsUrlParam("type", type.getId()) + "&"
         + nameAndValueAsUrlParam("groupId", groupId) + "&"
         + nameAndValueAsUrlParam("artifactId", artifactId) + "&"
